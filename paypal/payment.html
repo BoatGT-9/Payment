@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>payment</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        <!--
+        .style1 {
+            color: #FF0000
+        }
+        -->
+    </style>
+</head>
+
+<body>
+    <center>
+        
+    <form action="payment.php" method="post" name="frmMain">
+        <table width="604" border="0">
+
+            <td width="182" bgcolor="#FFFFFF" class=catbox>
+                <font color=#FC245C><b>ชำระเงิน</b></b></font>
+            </td>
+            </tr>
+
+            <tr>
+                <td>ส่งถึง</td>
+                <td width="412"><input name="txtTo" type="text" id="txtTo" value="twz192545@gmail"></td>
+            </tr>
+
+            <tr>
+                <td>ชื่อ-นามสกุล <span class="style1">*</span></td>
+                <td><input name="txtFormName" type="text"></td>
+            </tr>
+            <tr>
+                <td>เบอร์โทรศัพท์ <span class="style1">*</span></td>
+                <td><input name="txtphone" type="text" id="txtphone"></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>อีเมล์ <span class="style1">*</span></td>
+                <td><input name="txtFormEmail" type="text"></td>
+            </tr>
+            <tr>
+                <td>จำนวนเงิน <span class="style1">*</span></td>
+                <td><input name="txttotal" type="text" id="txttotal">
+                    บาท</td>
+            </tr>
+
+
+            <tr>
+                <td width="34%" valign="top">
+                    <div align="center"> <strong> </strong> </div>
+
+                    <strong>
+                        ชำระเข้าธนาคาร </strong>
+                    <font class="red style1">**</font>
+                </td>
+                <td width="66%">
+                    <p>
+                        <input name="rdoBank" type="radio" value="REG"
+                            onClick="JavaScript:frmMain.hdnBank.value='กสิกรไทย [730-2-44715-7]';">
+
+                        กสิกรไทย [XXX] <br>
+                        <input name="rdoBank" type="radio" value="REG"
+                            onClick="JavaScript:frmMain.hdnBank.value='กรุงไทย [690-0-00278-1]';">
+
+                        กรุงไทย [xXXX] <br>
+                        <input name="rdoBank" type="radio" value="REG"
+                            onClick="JavaScript:frmMain.hdnBank.value='กรุงเทพ [068-0-16334-2]';">
+
+                        กรุงเทพ [XXXX] <br>
+                        <input name="rdoBank" type="radio" value="REG"
+                            onClick="JavaScript:frmMain.hdnBank.value='ไทยพาณิชย์ [256-2-01317-7]';">
+
+                        ไทยพาณิชย์ [XXXX]
+                    </p>
+                </td>
+            </tr>
+
+
+           
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" name="Submit" value="Send"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+    </form>
+    </center>
+</body>
+
+</html>
